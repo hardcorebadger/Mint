@@ -12,6 +12,8 @@
 		2960A6B7219E1DCB000DBCE4 /* libpanelw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B3219E1DCB000DBCE4 /* libpanelw.6.dylib */; };
 		2960A6B8219E1DCB000DBCE4 /* libformw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B4219E1DCB000DBCE4 /* libformw.6.dylib */; };
 		2960A6B9219E1DCB000DBCE4 /* libmenuw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B5219E1DCB000DBCE4 /* libmenuw.6.dylib */; };
+		2960A6BC219E1EF0000DBCE4 /* libfmodstudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6BA219E1EF0000DBCE4 /* libfmodstudio.dylib */; };
+		2960A6BD219E1EF0000DBCE4 /* libfmod.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6BB219E1EF0000DBCE4 /* libfmod.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,8 @@
 		2960A6B3219E1DCB000DBCE4 /* libpanelw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpanelw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libpanelw.6.dylib; sourceTree = "<group>"; };
 		2960A6B4219E1DCB000DBCE4 /* libformw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libformw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libformw.6.dylib; sourceTree = "<group>"; };
 		2960A6B5219E1DCB000DBCE4 /* libmenuw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmenuw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libmenuw.6.dylib; sourceTree = "<group>"; };
+		2960A6BA219E1EF0000DBCE4 /* libfmodstudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodstudio.dylib; path = ../lib/libfmodstudio.dylib; sourceTree = "<group>"; };
+		2960A6BB219E1EF0000DBCE4 /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmod.dylib; path = ../lib/libfmod.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2960A6BC219E1EF0000DBCE4 /* libfmodstudio.dylib in Frameworks */,
+				2960A6BD219E1EF0000DBCE4 /* libfmod.dylib in Frameworks */,
 				2960A6B6219E1DCB000DBCE4 /* libncursesw.6.dylib in Frameworks */,
 				2960A6B7219E1DCB000DBCE4 /* libpanelw.6.dylib in Frameworks */,
 				2960A6B8219E1DCB000DBCE4 /* libformw.6.dylib in Frameworks */,
@@ -78,6 +84,8 @@
 		2960A6B1219E1DCB000DBCE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2960A6BB219E1EF0000DBCE4 /* libfmod.dylib */,
+				2960A6BA219E1EF0000DBCE4 /* libfmodstudio.dylib */,
 				2960A6B4219E1DCB000DBCE4 /* libformw.6.dylib */,
 				2960A6B5219E1DCB000DBCE4 /* libmenuw.6.dylib */,
 				2960A6B2219E1DCB000DBCE4 /* libncursesw.6.dylib */,
@@ -265,12 +273,20 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				"HEADER_SEARCH_PATHS[arch=*]" = /user/local/Cellar/ncurses/6.1/include;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/user/local/Cellar/ncurses/6.1/include,
+					"$(PROJECT_DIR)/../lib/fmod/api/studio/inc",
+					"$(PROJECT_DIR)/../lib/fmod/api/lowlevel/inc",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../lib/";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/ncurses/6.1/lib,
 				);
-				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/ncurses/6.1/lib;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					/usr/local/Cellar/ncurses/6.1/lib,
+					"$(PROJECT_DIR)/../lib/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -280,12 +296,20 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				"HEADER_SEARCH_PATHS[arch=*]" = /user/local/Cellar/ncurses/6.1/include;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/user/local/Cellar/ncurses/6.1/include,
+					"$(PROJECT_DIR)/../lib/fmod/api/studio/inc",
+					"$(PROJECT_DIR)/../lib/fmod/api/lowlevel/inc",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../lib/";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/ncurses/6.1/lib,
 				);
-				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/ncurses/6.1/lib;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					/usr/local/Cellar/ncurses/6.1/lib,
+					"$(PROJECT_DIR)/../lib/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
