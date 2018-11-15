@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2960A6AB219E1C0F000DBCE4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6AA219E1C0F000DBCE4 /* main.cpp */; };
+		2960A6B6219E1DCB000DBCE4 /* libncursesw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B2219E1DCB000DBCE4 /* libncursesw.6.dylib */; };
+		2960A6B7219E1DCB000DBCE4 /* libpanelw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B3219E1DCB000DBCE4 /* libpanelw.6.dylib */; };
+		2960A6B8219E1DCB000DBCE4 /* libformw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B4219E1DCB000DBCE4 /* libformw.6.dylib */; };
+		2960A6B9219E1DCB000DBCE4 /* libmenuw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B5219E1DCB000DBCE4 /* libmenuw.6.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		2960A6A7219E1C0F000DBCE4 /* Mint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mint; sourceTree = BUILT_PRODUCTS_DIR; };
 		2960A6AA219E1C0F000DBCE4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2960A6B2219E1DCB000DBCE4 /* libncursesw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libncursesw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libncursesw.6.dylib; sourceTree = "<group>"; };
+		2960A6B3219E1DCB000DBCE4 /* libpanelw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpanelw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libpanelw.6.dylib; sourceTree = "<group>"; };
+		2960A6B4219E1DCB000DBCE4 /* libformw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libformw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libformw.6.dylib; sourceTree = "<group>"; };
+		2960A6B5219E1DCB000DBCE4 /* libmenuw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmenuw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libmenuw.6.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2960A6B6219E1DCB000DBCE4 /* libncursesw.6.dylib in Frameworks */,
+				2960A6B7219E1DCB000DBCE4 /* libpanelw.6.dylib in Frameworks */,
+				2960A6B8219E1DCB000DBCE4 /* libformw.6.dylib in Frameworks */,
+				2960A6B9219E1DCB000DBCE4 /* libmenuw.6.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +55,7 @@
 			children = (
 				2960A6A9219E1C0F000DBCE4 /* Mint */,
 				2960A6A8219E1C0F000DBCE4 /* Products */,
+				2960A6B1219E1DCB000DBCE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,17 @@
 				2960A6AA219E1C0F000DBCE4 /* main.cpp */,
 			);
 			path = Mint;
+			sourceTree = "<group>";
+		};
+		2960A6B1219E1DCB000DBCE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2960A6B4219E1DCB000DBCE4 /* libformw.6.dylib */,
+				2960A6B5219E1DCB000DBCE4 /* libmenuw.6.dylib */,
+				2960A6B2219E1DCB000DBCE4 /* libncursesw.6.dylib */,
+				2960A6B3219E1DCB000DBCE4 /* libpanelw.6.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +264,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				"HEADER_SEARCH_PATHS[arch=*]" = /user/local/Cellar/ncurses/6.1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/ncurses/6.1/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/ncurses/6.1/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +279,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				"HEADER_SEARCH_PATHS[arch=*]" = /user/local/Cellar/ncurses/6.1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/ncurses/6.1/lib,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/ncurses/6.1/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
