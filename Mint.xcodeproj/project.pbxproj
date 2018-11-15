@@ -14,6 +14,7 @@
 		2960A6B9219E1DCB000DBCE4 /* libmenuw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B5219E1DCB000DBCE4 /* libmenuw.6.dylib */; };
 		2960A6BC219E1EF0000DBCE4 /* libfmodstudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6BA219E1EF0000DBCE4 /* libfmodstudio.dylib */; };
 		2960A6BD219E1EF0000DBCE4 /* libfmod.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6BB219E1EF0000DBCE4 /* libfmod.dylib */; };
+		2960A6C0219E1F5D000DBCE4 /* MintEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6BE219E1F5D000DBCE4 /* MintEngine.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		2960A6B5219E1DCB000DBCE4 /* libmenuw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmenuw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libmenuw.6.dylib; sourceTree = "<group>"; };
 		2960A6BA219E1EF0000DBCE4 /* libfmodstudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodstudio.dylib; path = ../lib/libfmodstudio.dylib; sourceTree = "<group>"; };
 		2960A6BB219E1EF0000DBCE4 /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmod.dylib; path = ../lib/libfmod.dylib; sourceTree = "<group>"; };
+		2960A6BE219E1F5D000DBCE4 /* MintEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MintEngine.cpp; sourceTree = "<group>"; };
+		2960A6BF219E1F5D000DBCE4 /* MintEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MintEngine.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				2960A6AA219E1C0F000DBCE4 /* main.cpp */,
+				2960A6BE219E1F5D000DBCE4 /* MintEngine.cpp */,
+				2960A6BF219E1F5D000DBCE4 /* MintEngine.hpp */,
 			);
 			path = Mint;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2960A6AB219E1C0F000DBCE4 /* main.cpp in Sources */,
+				2960A6C0219E1F5D000DBCE4 /* MintEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
