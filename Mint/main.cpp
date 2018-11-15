@@ -7,10 +7,8 @@
 //
 
 #include <iostream>
-#include "MintEngine.hpp"
 
 int main(int argc, const char * argv[]) {
-    MintEngine engine;
     std::cout << "Hello, World!\n";
     return 0;
 }
