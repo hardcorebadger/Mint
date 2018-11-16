@@ -9,7 +9,7 @@ Make a game engine for command line games. Create easier abstraction layers on t
 * NCurses is in there, used for rendering
 ### Rendering
 * 3 Primitive Renderable Objects: MTChar MTLabel and MTMesh
-* MTMesh allows complex objects made out of chars ant defined positions to render
+* MTMesh allows complex objects made out of chars at defined positions to render
 * Works basically like a mesh with vertex data
 ### Logging
 * Popover window for logging
