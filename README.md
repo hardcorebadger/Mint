@@ -1,2 +1,2 @@
 # Mint
-A Lightweight Console Game Engine
+A Lightweight Command Line Game Engine
