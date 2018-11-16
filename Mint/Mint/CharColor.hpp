@@ -1,22 +1,20 @@
 //
-//  Icon.hpp
+//  CharColor.hpp
 //  Mint
 //
 //  Created by Jake Trefethen on 11/15/18.
 //  Copyright © 2018 Jake Trefethen. All rights reserved.
 //
 
-#ifndef Icon_hpp
-#define Icon_hpp
+#ifndef CharColor_hpp
+#define CharColor_hpp
 
 #include <stdio.h>
-#include "Core.hpp"
 
 namespace Mint {
-    struct Chixel {
-        char Symbol;
-        CharColor Color;
-    };
+    struct CharColor {
+        short Fg, Bg;
+    }
 }
 
-#endif /* Icon_hpp */
+#endif /* CharColor_hpp */

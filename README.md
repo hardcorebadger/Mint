@@ -7,3 +7,12 @@ A Lightweight Command Line Game Engine
 * objects has transforms - mainly position, maybe I'll deal with rotation and scale
 * objects can have a charMesh - basically the ncurses equivalent of a mesh - its basicallt a textfile showing the ascii characters, and other basically vert attrib arrays (like defining a texture by saying the color at each position)
 * charRenderer has a charBody and a charMaterial - basically a shader equivalent - takes in the charMesh and renders it to window
+
+## Rendering
+* base layer: Chixels "char pixels" - draw chixel at a 2d position in screenspace
+* object layer: objects have a z dimension, used primarily for z-index ordering
+### Object layer
+* transform with z index
+* charMesh - setup of chixels to draw when drawing object
+* objects drawn with painters algo from back to front
+* maybe some simple blending on chixels

@@ -41,13 +41,18 @@ namespace Mint {
     void Engine::Run() {
         while (true) {
             MTApplication->Update();
+            MTConsole.Update();
             MTRenderer.Update();
-            usleep(14000);
+            usleep(140000);
         }
     }
     
     void Engine::Shutdown() {
         delete MTApplication;
+    }
+    
+    int Engine::Hash(int a, int b) {
+        return ((a+b)*(a+b+1)/2)+a;
     }
     
 }

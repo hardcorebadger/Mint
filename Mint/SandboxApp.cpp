@@ -11,13 +11,22 @@
 
 class Sandbox : public Mint::Application {
 public:
-    Chixel i;
+    MTChar i;
     Sandbox() {}
     ~Sandbox(){}
     void Init() {
-        i = Chixel(3,4,'f');
+        i = MTChar{'f',CharColor{6,9}};
+        Engine::Instance()->MTConsole.Log("hi");
+        Engine::Instance()->MTConsole.LogWarning("hi");
+        Engine::Instance()->MTConsole.LogError("hi");
     }
     void Update() {
+        if (rand()%2 == 0)
+        Engine::Instance()->MTConsole.Log("hi");
+        if (rand()%2 == 0)
+        Engine::Instance()->MTConsole.LogWarning("hi");
+        if (rand()%2 == 0)
+        Engine::Instance()->MTConsole.LogError("hi");
         Engine::Instance()->MTRenderer.Draw(i, Vector2{2,2});
     }
 };

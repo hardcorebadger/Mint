@@ -10,6 +10,7 @@
 #define Engine_hpp
 
 #include <stdio.h>
+#include "Console.hpp"
 #include "Renderer.hpp"
 #include "Application.hpp"
 
@@ -23,7 +24,9 @@ namespace Mint {
         void Shutdown();
         void Run();
         Renderer MTRenderer;
+        Console MTConsole;
         Application* MTApplication;
+        int Hash(int a, int b);
     };
 }
 

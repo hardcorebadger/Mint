@@ -10,8 +10,6 @@
 #include "Engine.hpp"
 
 namespace Mint {
-    Chixel::Chixel(short bg, short fg, char i) : Symbol(i) {
-        Colors = Engine::Instance()->MTRenderer.GenerateColorPair(bg,fg);
-    }
+    Chixel::Chixel(CharColor c, char i) : Color(c), Symbol(i) {}
     Chixel::~Chixel() {}
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2910F548219E77BB00C5E944 /* Chixel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2910F546219E77BA00C5E944 /* Chixel.cpp */; };
 		292E9821219E5EDA00EE6B32 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 292E981F219E5EDA00EE6B32 /* Engine.cpp */; };
 		2960A6B6219E1DCB000DBCE4 /* libncursesw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B2219E1DCB000DBCE4 /* libncursesw.6.dylib */; };
 		2960A6B7219E1DCB000DBCE4 /* libpanelw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B3219E1DCB000DBCE4 /* libpanelw.6.dylib */; };
@@ -18,6 +17,7 @@
 		2960A6C5219E28DF000DBCE4 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6C3219E28DF000DBCE4 /* Application.cpp */; };
 		2960A6C9219E2A1E000DBCE4 /* SandboxApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6C8219E2A1E000DBCE4 /* SandboxApp.cpp */; };
 		2960A6CD219E308D000DBCE4 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6CB219E308D000DBCE4 /* Renderer.cpp */; };
+		29828FF3219E8DD300D66D74 /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29828FF1219E8DD300D66D74 /* Console.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,8 +33,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2910F546219E77BA00C5E944 /* Chixel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chixel.cpp; sourceTree = "<group>"; };
-		2910F547219E77BB00C5E944 /* Chixel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Chixel.hpp; sourceTree = "<group>"; };
 		292E981F219E5EDA00EE6B32 /* Engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
 		292E9820219E5EDA00EE6B32 /* Engine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Engine.hpp; sourceTree = "<group>"; };
 		2960A6A7219E1C0F000DBCE4 /* Mint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mint; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +50,8 @@
 		2960A6CA219E2B7A000DBCE4 /* EntryPoint.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EntryPoint.hpp; sourceTree = "<group>"; };
 		2960A6CB219E308D000DBCE4 /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
 		2960A6CC219E308D000DBCE4 /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		29828FF1219E8DD300D66D74 /* Console.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Console.cpp; sourceTree = "<group>"; };
+		29828FF2219E8DD300D66D74 /* Console.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Console.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +114,6 @@
 		2960A6C1219E28B0000DBCE4 /* Mint */ = {
 			isa = PBXGroup;
 			children = (
-				2910F546219E77BA00C5E944 /* Chixel.cpp */,
-				2910F547219E77BB00C5E944 /* Chixel.hpp */,
 				2960A6C2219E28CE000DBCE4 /* Core.hpp */,
 				2960A6C3219E28DF000DBCE4 /* Application.cpp */,
 				2960A6C4219E28DF000DBCE4 /* Application.hpp */,
@@ -124,6 +122,8 @@
 				2960A6CC219E308D000DBCE4 /* Renderer.hpp */,
 				292E981F219E5EDA00EE6B32 /* Engine.cpp */,
 				292E9820219E5EDA00EE6B32 /* Engine.hpp */,
+				29828FF1219E8DD300D66D74 /* Console.cpp */,
+				29828FF2219E8DD300D66D74 /* Console.hpp */,
 			);
 			path = Mint;
 			sourceTree = "<group>";
@@ -186,8 +186,8 @@
 			files = (
 				2960A6CD219E308D000DBCE4 /* Renderer.cpp in Sources */,
 				2960A6C5219E28DF000DBCE4 /* Application.cpp in Sources */,
+				29828FF3219E8DD300D66D74 /* Console.cpp in Sources */,
 				2960A6C9219E2A1E000DBCE4 /* SandboxApp.cpp in Sources */,
-				2910F548219E77BB00C5E944 /* Chixel.cpp in Sources */,
 				292E9821219E5EDA00EE6B32 /* Engine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
