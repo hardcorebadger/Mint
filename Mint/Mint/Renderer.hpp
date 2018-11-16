@@ -13,7 +13,7 @@
 #include <string>
 #include "ncurses.h"
 #include <map>
-#include "Icon.hpp"
+#include "Chixel.hpp"
 #include "Core.hpp"
 
 using namespace std;
@@ -25,7 +25,7 @@ namespace Mint {
         void Init();
         void Update();
         void Shutdown();
-        void Draw(const Icon& icon, const Vector2& pos);
+        void Draw(const Chixel& icon, const Vector2& pos);
         int GenerateColorPair(short bg, short fg);
     private:
         int _curColor;

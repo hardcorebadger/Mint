@@ -12,10 +12,10 @@
 #include <stdio.h>
 
 namespace Mint {
-    struct Icon {
-        Icon(){}
-        Icon(short bg, short fg, char i);
-        ~Icon();
+    struct Chixel {
+        Chixel(){}
+        Chixel(short bg, short fg, char i);
+        ~Chixel();
         char Symbol;
         int Colors;
     };

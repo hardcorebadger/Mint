@@ -40,7 +40,7 @@ namespace Mint {
         endwin();
     }
     
-    void Renderer::Draw(const Icon& icon, const Vector2& pos) {
+    void Renderer::Draw(const Chixel& icon, const Vector2& pos) {
         wattron(_window,COLOR_PAIR(icon.Colors));
         mvwaddch(_window, pos.y, pos.x, icon.Symbol);
         wattroff(_window,COLOR_PAIR(icon.Colors));

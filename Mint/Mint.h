@@ -10,8 +10,7 @@
 
 #include "Mint/Application.hpp"
 #include "Mint/EntryPoint.hpp"
-#include "Mint/Icon.hpp"
 #include "Mint/Engine.hpp"
 #include "Mint/Renderer.hpp"
-#include "Mint/Icon.hpp"
+#include "Mint/Chixel.hpp"
 
