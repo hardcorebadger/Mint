@@ -1,18 +1,17 @@
 # Mint
 A Lightweight Command Line Game Engine
 
-## The Idea
-* Based on NCurses, you've got your windows - in mint they are called scenes (like Unity)
-* Scenes have object hierarchies like in unity, but everything is determined in 2D coordinates not 3D
-* objects has transforms - mainly position, maybe I'll deal with rotation and scale
-* objects can have a charMesh - basically the ncurses equivalent of a mesh - its basicallt a textfile showing the ascii characters, and other basically vert attrib arrays (like defining a texture by saying the color at each position)
-* charRenderer has a charBody and a charMaterial - basically a shader equivalent - takes in the charMesh and renders it to window
+## Plan
+Make a game engine for command line games. Create easier abstraction layers on top of NCurses for rendering simple as well as more complex objects. Support blending and z-index layering (painters algorithm & depth buffer) for drawing objects to the viewport. Have object hierarchy in a scene with viewport-decoupled transforms (ie world->viewport tranformation matrix). Support console logging from within the application (since it's in terminal that's not a given). Create abstraction layer on FMOD for audio. Basically make a unity-inspired abstraction for the application to run in, but in a console application.
 
-## Rendering
-* base layer: Chixels "char pixels" - draw chixel at a 2d position in screenspace
-* object layer: objects have a z dimension, used primarily for z-index ordering
-### Object layer
-* transform with z index
-* charMesh - setup of chixels to draw when drawing object
-* objects drawn with painters algo from back to front
-* maybe some simple blending on chixels
+## Stuff So Far
+* FMOD is in there, no engine code to run it yet
+* NCurses is in there, used for rendering
+### Rendering
+* 3 Primitive Renderable Objects: MTChar MTLabel and MTMesh
+* MTMesh allows complex objects made out of chars ant defined positions to render
+* Works basically like a mesh with vertex data
+### Logging
+* Popover window for logging
+* static functions to log normal, error, and warning
+* can hide the console with a macro
