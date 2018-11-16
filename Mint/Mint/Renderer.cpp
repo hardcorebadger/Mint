@@ -29,7 +29,8 @@ namespace Mint {
         _window = newwin(_height, _width, 0, 0);
         werase(_window);
         wrefresh(_window);
-        _console = newwin(10, _width, _height-10, 0);
+        int i = SHOW_CONSOLE == 1 ? 10 : 0;
+        _console = newwin(i, _width, _height-i, 0);
         _panel = new_panel(_window);
         _cPanel = new_panel(_console);
     }

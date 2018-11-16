@@ -11,9 +11,9 @@
 
 namespace Mint {
     Console::Console() {
-        _logColor = {0,15};
-        _warningColor = {0,11};
-        _errorColor = {0,9};
+        _logColor = {0,Color::WHITE};
+        _warningColor = {0,Color::YELLOW};
+        _errorColor = {0,Color::RED};
     }
     void Console::Log(const string& s) {
         _logBuffer.push_back(MTLabel{"[Log]: "+s,_logColor});
