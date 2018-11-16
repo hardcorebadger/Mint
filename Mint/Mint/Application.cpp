@@ -6,14 +6,12 @@
 //  Copyright © 2018 Jake Trefethen. All rights reserved.
 //
 
-#include "Application.h"
+#include "Application.hpp"
 
 namespace Mint {
 
     Application::Application(){}
     Application::~Application(){}
-    void Application::Run(){
-        while(true);
-    }
-
+    void Application::Init(){}
+    void Application::Update(){}
 }

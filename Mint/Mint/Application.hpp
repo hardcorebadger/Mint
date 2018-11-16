@@ -6,10 +6,8 @@
 //  Copyright © 2018 Jake Trefethen. All rights reserved.
 //
 
-#ifndef Application_hpp
-#define Application_hpp
-
-#include <stdio.h>
+#ifndef Application_h
+#define Application_h
 
 namespace Mint {
     
@@ -17,7 +15,8 @@ namespace Mint {
     public:
         Application();
         virtual ~Application();
-        void Run();
+        virtual void Init();
+        virtual void Update();
     };
     
     // to be defined in client

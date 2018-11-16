@@ -11,8 +11,15 @@
 
 class Sandbox : public Mint::Application {
 public:
-    Sandbox(){}
+    Icon i;
+    Sandbox() {}
     ~Sandbox(){}
+    void Init() {
+        i = Icon(3,4,'f');
+    }
+    void Update() {
+        Engine::Instance()->MTRenderer.Draw(i, Vector2{2,2});
+    }
 };
 
 Mint::Application* Mint::CreateApplication() {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292E981E219E5B0000EE6B32 /* Icon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 292E981C219E5B0000EE6B32 /* Icon.cpp */; };
+		292E9821219E5EDA00EE6B32 /* Engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 292E981F219E5EDA00EE6B32 /* Engine.cpp */; };
 		2960A6B6219E1DCB000DBCE4 /* libncursesw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B2219E1DCB000DBCE4 /* libncursesw.6.dylib */; };
 		2960A6B7219E1DCB000DBCE4 /* libpanelw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B3219E1DCB000DBCE4 /* libpanelw.6.dylib */; };
 		2960A6B8219E1DCB000DBCE4 /* libformw.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6B4219E1DCB000DBCE4 /* libformw.6.dylib */; };
@@ -15,6 +17,7 @@
 		2960A6BD219E1EF0000DBCE4 /* libfmod.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2960A6BB219E1EF0000DBCE4 /* libfmod.dylib */; };
 		2960A6C5219E28DF000DBCE4 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6C3219E28DF000DBCE4 /* Application.cpp */; };
 		2960A6C9219E2A1E000DBCE4 /* SandboxApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6C8219E2A1E000DBCE4 /* SandboxApp.cpp */; };
+		2960A6CD219E308D000DBCE4 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6CB219E308D000DBCE4 /* Renderer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +33,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		292E981C219E5B0000EE6B32 /* Icon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Icon.cpp; sourceTree = "<group>"; };
+		292E981D219E5B0000EE6B32 /* Icon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Icon.hpp; sourceTree = "<group>"; };
+		292E981F219E5EDA00EE6B32 /* Engine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Engine.cpp; sourceTree = "<group>"; };
+		292E9820219E5EDA00EE6B32 /* Engine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Engine.hpp; sourceTree = "<group>"; };
 		2960A6A7219E1C0F000DBCE4 /* Mint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mint; sourceTree = BUILT_PRODUCTS_DIR; };
 		2960A6B2219E1DCB000DBCE4 /* libncursesw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libncursesw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libncursesw.6.dylib; sourceTree = "<group>"; };
 		2960A6B3219E1DCB000DBCE4 /* libpanelw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpanelw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libpanelw.6.dylib; sourceTree = "<group>"; };
@@ -37,12 +44,14 @@
 		2960A6B5219E1DCB000DBCE4 /* libmenuw.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmenuw.6.dylib; path = ../../../../../usr/local/Cellar/ncurses/6.1/lib/libmenuw.6.dylib; sourceTree = "<group>"; };
 		2960A6BA219E1EF0000DBCE4 /* libfmodstudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmodstudio.dylib; path = ../lib/libfmodstudio.dylib; sourceTree = "<group>"; };
 		2960A6BB219E1EF0000DBCE4 /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfmod.dylib; path = ../lib/libfmod.dylib; sourceTree = "<group>"; };
-		2960A6C2219E28CE000DBCE4 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		2960A6C2219E28CE000DBCE4 /* Core.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Core.hpp; sourceTree = "<group>"; };
 		2960A6C3219E28DF000DBCE4 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
-		2960A6C4219E28DF000DBCE4 /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		2960A6C4219E28DF000DBCE4 /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
 		2960A6C7219E297C000DBCE4 /* Mint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mint.h; sourceTree = "<group>"; };
 		2960A6C8219E2A1E000DBCE4 /* SandboxApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SandboxApp.cpp; sourceTree = "<group>"; };
-		2960A6CA219E2B7A000DBCE4 /* EntryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryPoint.h; sourceTree = "<group>"; };
+		2960A6CA219E2B7A000DBCE4 /* EntryPoint.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EntryPoint.hpp; sourceTree = "<group>"; };
+		2960A6CB219E308D000DBCE4 /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		2960A6CC219E308D000DBCE4 /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +114,16 @@
 		2960A6C1219E28B0000DBCE4 /* Mint */ = {
 			isa = PBXGroup;
 			children = (
-				2960A6C2219E28CE000DBCE4 /* Core.h */,
+				2960A6C2219E28CE000DBCE4 /* Core.hpp */,
 				2960A6C3219E28DF000DBCE4 /* Application.cpp */,
-				2960A6C4219E28DF000DBCE4 /* Application.h */,
-				2960A6CA219E2B7A000DBCE4 /* EntryPoint.h */,
+				2960A6C4219E28DF000DBCE4 /* Application.hpp */,
+				2960A6CA219E2B7A000DBCE4 /* EntryPoint.hpp */,
+				2960A6CB219E308D000DBCE4 /* Renderer.cpp */,
+				2960A6CC219E308D000DBCE4 /* Renderer.hpp */,
+				292E981C219E5B0000EE6B32 /* Icon.cpp */,
+				292E981D219E5B0000EE6B32 /* Icon.hpp */,
+				292E981F219E5EDA00EE6B32 /* Engine.cpp */,
+				292E9820219E5EDA00EE6B32 /* Engine.hpp */,
 			);
 			path = Mint;
 			sourceTree = "<group>";
@@ -169,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2960A6CD219E308D000DBCE4 /* Renderer.cpp in Sources */,
 				2960A6C5219E28DF000DBCE4 /* Application.cpp in Sources */,
+				292E981E219E5B0000EE6B32 /* Icon.cpp in Sources */,
 				2960A6C9219E2A1E000DBCE4 /* SandboxApp.cpp in Sources */,
+				292E9821219E5EDA00EE6B32 /* Engine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

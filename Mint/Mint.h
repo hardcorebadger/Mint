@@ -8,7 +8,10 @@
 
 // for use by mint applications
 
-#include "Mint/Application.h"
-#include "Mint/EntryPoint.h"
-
+#include "Mint/Application.hpp"
+#include "Mint/EntryPoint.hpp"
+#include "Mint/Icon.hpp"
+#include "Mint/Engine.hpp"
+#include "Mint/Renderer.hpp"
+#include "Mint/Icon.hpp"
 
