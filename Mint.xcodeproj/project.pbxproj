@@ -18,6 +18,7 @@
 		2960A6C9219E2A1E000DBCE4 /* SandboxApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6C8219E2A1E000DBCE4 /* SandboxApp.cpp */; };
 		2960A6CD219E308D000DBCE4 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6CB219E308D000DBCE4 /* Renderer.cpp */; };
 		29828FF3219E8DD300D66D74 /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29828FF1219E8DD300D66D74 /* Console.cpp */; };
+		29828FF9219F3B8000D66D74 /* File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29828FF7219F3B8000D66D74 /* File.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,8 @@
 		2960A6CC219E308D000DBCE4 /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
 		29828FF1219E8DD300D66D74 /* Console.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Console.cpp; sourceTree = "<group>"; };
 		29828FF2219E8DD300D66D74 /* Console.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Console.hpp; sourceTree = "<group>"; };
+		29828FF7219F3B8000D66D74 /* File.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = File.cpp; sourceTree = "<group>"; };
+		29828FF8219F3B8000D66D74 /* File.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = File.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				292E9820219E5EDA00EE6B32 /* Engine.hpp */,
 				29828FF1219E8DD300D66D74 /* Console.cpp */,
 				29828FF2219E8DD300D66D74 /* Console.hpp */,
+				29828FF7219F3B8000D66D74 /* File.cpp */,
+				29828FF8219F3B8000D66D74 /* File.hpp */,
 			);
 			path = Mint;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				2960A6CD219E308D000DBCE4 /* Renderer.cpp in Sources */,
 				2960A6C5219E28DF000DBCE4 /* Application.cpp in Sources */,
 				29828FF3219E8DD300D66D74 /* Console.cpp in Sources */,
+				29828FF9219F3B8000D66D74 /* File.cpp in Sources */,
 				2960A6C9219E2A1E000DBCE4 /* SandboxApp.cpp in Sources */,
 				292E9821219E5EDA00EE6B32 /* Engine.cpp in Sources */,
 			);
