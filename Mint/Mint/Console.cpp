@@ -16,13 +16,16 @@ namespace Mint {
         _errorColor = {0,Color::RED};
     }
     void Console::Log(const string& s) {
-        _logBuffer.push_back(MTLabel{"[Log]: "+s,_logColor});
+        Engine* e =Engine::Instance();
+        e->MTConsole._logBuffer.push_back(MTLabel{"[Log]: "+s,e->MTConsole._logColor});
     }
     void Console::LogWarning(const string& s) {
-        _logBuffer.push_back(MTLabel{"[Warning]: "+s,_warningColor});
+        Engine* e =Engine::Instance();
+        e->MTConsole._logBuffer.push_back(MTLabel{"[Warning]: "+s,e->MTConsole._warningColor});
     }
     void Console::LogError(const string& s) {
-        _logBuffer.push_back(MTLabel{"[Error]: "+s,_errorColor});
+        Engine* e =Engine::Instance();
+        e->MTConsole._logBuffer.push_back(MTLabel{"[Error]: "+s,e->MTConsole._errorColor});
     }
     void Console::Update() {
         int i = 0;

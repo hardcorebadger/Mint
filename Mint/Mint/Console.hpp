@@ -20,9 +20,9 @@ namespace Mint {
     class Console {
     public:
         Console();
-        void Log(const string& s);
-        void LogWarning(const string& s);
-        void LogError(const string& s);
+        static void Log(const string& s);
+        static void LogWarning(const string& s);
+        static void LogError(const string& s);
         void Update();
     private:
         CharColor _logColor,_warningColor,_errorColor;

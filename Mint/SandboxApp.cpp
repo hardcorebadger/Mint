@@ -15,17 +15,16 @@ public:
     Sandbox() {}
     ~Sandbox(){}
     void Init() {
-        i = MTChar{'f',CharColor{6,9}};
     }
     void Update() {
         if (rand()%2 == 0)
-            Engine::Instance()->MTConsole.Log("hi");
+            Console::Log("hi");
         if (rand()%2 == 0)
-            Engine::Instance()->MTConsole.LogWarning("hi");
+            Console::LogWarning("hi");
         if (rand()%2 == 0)
-            Engine::Instance()->MTConsole.LogError("hi");
-        Engine::Instance()->MTRenderer.Draw(i, Vector2{2,2});
-        Engine::Instance()->MTRenderer.Draw(MTLabel{"whats up", {0,Color::BLUE}}, Vector2{2,3});
+            Console::LogError("hi");
+        Engine::Instance()->MTRenderer.Draw({'f',{0,Color::RED}}, {2,2});
+        Engine::Instance()->MTRenderer.Draw({"whats up", {0,Color::BLUE}}, {2,3});
     }
 };
 
