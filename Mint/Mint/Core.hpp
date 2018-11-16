@@ -10,11 +10,16 @@
 #define Core_hpp
 
 #include <string>
+#include <vector>
 
 #define SHOW_CONSOLE 1
+#define TICK 140000
 
 struct Vector2 {
     int x; int y;
+    friend Vector2 operator+(Vector2 lhs, const Vector2& rhs) {
+        return Vector2{lhs.x+rhs.x, lhs.y+rhs.y};
+    }
 };
 struct Vector3 {
     int x; int y; int z;
@@ -48,6 +53,17 @@ struct MTChar {
 struct MTLabel {
     std::string val;
     CharColor Color;
+};
+struct MTMesh {
+    MTMesh(){}
+    MTMesh(const char* chars, const CharColor* colors, const Vector2* pos, int size) {
+        for (int i = 0; i < size; ++i) {
+            Chars.push_back({chars[i],colors[i]});
+            Positions.push_back(pos[i]);
+        }
+    }
+    std::vector<MTChar> Chars;
+    std::vector<Vector2> Positions;
 };
 
 #endif /* Core_hpp */

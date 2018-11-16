@@ -59,6 +59,12 @@ namespace Mint {
         mvwprintw(w,pos.y,pos.x,l.val.c_str());
         wattroff(w,COLOR_PAIR(ColorPair(l.Color)));
     }
+    
+    void Renderer::Draw(const MTMesh& m, const Vector2& pos, unsigned short pid) {
+        for (int i = 0; i < m.Chars.size(); i++) {
+            Draw(m.Chars[i], m.Positions[i]+pos);
+        }
+    }
 
     int Renderer::ColorPair(CharColor c) {
         int h = Engine::Instance()->Hash(c.bg,c.fg);

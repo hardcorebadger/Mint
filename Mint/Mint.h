@@ -12,4 +12,4 @@
 #include "Mint/EntryPoint.hpp"
 #include "Mint/Engine.hpp"
 #include "Mint/Renderer.hpp"
-
+#include "Mint/Core.hpp"

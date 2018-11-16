@@ -43,7 +43,7 @@ namespace Mint {
             MTApplication->Update();
             MTConsole.Update();
             MTRenderer.Update();
-            usleep(140000);
+            usleep(TICK);
         }
     }
     

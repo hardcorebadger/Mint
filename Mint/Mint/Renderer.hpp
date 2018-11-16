@@ -28,6 +28,7 @@ namespace Mint {
         void Shutdown();
         void Draw(const MTChar& c, const Vector2& pos, unsigned short pid = 0);
         void Draw(const MTLabel& l, const Vector2& pos, unsigned short pid = 0);
+        void Draw(const MTMesh& r, const Vector2& pos, unsigned short pid = 0);
         int ColorPair(CharColor c);
     private:
         WINDOW* _window;

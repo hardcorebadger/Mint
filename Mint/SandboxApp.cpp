@@ -12,18 +12,17 @@
 class Sandbox : public Mint::Application {
 public:
     MTChar i;
+    MTMesh r;
     Sandbox() {}
     ~Sandbox(){}
     void Init() {
+        char ch[] = {'a','b','c'};
+        CharColor cc[] = {{Color::YELLOW,Color::RED},{0,Color::BLUE},{Color::YELLOW,Color::GREEN}};
+        Vector2 v[] = {{0,0},{1,1},{2,2}};
+        r = MTMesh(ch,cc,v,3);
     }
     void Update() {
-        if (rand()%2 == 0)
-            Console::Log("hi");
-        if (rand()%2 == 0)
-            Console::LogWarning("hi");
-        if (rand()%2 == 0)
-            Console::LogError("hi");
-        Engine::Instance()->MTRenderer.Draw({'f',{0,Color::RED}}, {2,2});
+        Engine::Instance()->MTRenderer.Draw(r, {4,4});
         Engine::Instance()->MTRenderer.Draw({"whats up", {0,Color::BLUE}}, {2,3});
     }
 };
