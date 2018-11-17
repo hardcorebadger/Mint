@@ -35,6 +35,7 @@ namespace Mint {
     void Engine::Init(Application * app) {
         MTApplication = app;
         MTRenderer.Init();
+        MTAssetManager.LoadAssets();
         app->Init();
     }
     

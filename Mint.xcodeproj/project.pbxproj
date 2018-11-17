@@ -19,6 +19,7 @@
 		2960A6CD219E308D000DBCE4 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2960A6CB219E308D000DBCE4 /* Renderer.cpp */; };
 		29828FF3219E8DD300D66D74 /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29828FF1219E8DD300D66D74 /* Console.cpp */; };
 		29828FF9219F3B8000D66D74 /* File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29828FF7219F3B8000D66D74 /* File.cpp */; };
+		29B16962219FDC76003193FC /* AssetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29B16960219FDC76003193FC /* AssetManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,8 @@
 		29828FF2219E8DD300D66D74 /* Console.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Console.hpp; sourceTree = "<group>"; };
 		29828FF7219F3B8000D66D74 /* File.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = File.cpp; sourceTree = "<group>"; };
 		29828FF8219F3B8000D66D74 /* File.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = File.hpp; sourceTree = "<group>"; };
+		29B16960219FDC76003193FC /* AssetManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AssetManager.cpp; sourceTree = "<group>"; };
+		29B16961219FDC76003193FC /* AssetManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AssetManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				29828FF2219E8DD300D66D74 /* Console.hpp */,
 				29828FF7219F3B8000D66D74 /* File.cpp */,
 				29828FF8219F3B8000D66D74 /* File.hpp */,
+				29B16960219FDC76003193FC /* AssetManager.cpp */,
+				29B16961219FDC76003193FC /* AssetManager.hpp */,
 			);
 			path = Mint;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B16962219FDC76003193FC /* AssetManager.cpp in Sources */,
 				2960A6CD219E308D000DBCE4 /* Renderer.cpp in Sources */,
 				2960A6C5219E28DF000DBCE4 /* Application.cpp in Sources */,
 				29828FF3219E8DD300D66D74 /* Console.cpp in Sources */,

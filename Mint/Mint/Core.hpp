@@ -62,6 +62,7 @@ struct MTMesh {
             Positions.push_back(pos[i]);
         }
     }
+    MTMesh(const std::vector<MTChar>& c, const std::vector<Vector2>& v) : Chars(c), Positions(v) {}
     std::vector<MTChar> Chars;
     std::vector<Vector2> Positions;
 };

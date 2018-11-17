@@ -20,11 +20,12 @@ namespace Mint {
     public:
         File(const string& s);
         ~File();
-//        static void GetFilesForDirectory(const string& d, const vector<File>& files);
-        vector<string> Read();
+        static void GetFilesForDirectory(const string& d, vector<File>& files);
+        void Read(vector<string>& lines);
         void WriteLine(const string& s);
+        string Path;
     private:
-        string _path;
+        
     };
 }
 

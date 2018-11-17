@@ -13,6 +13,7 @@
 #include "Console.hpp"
 #include "Renderer.hpp"
 #include "Application.hpp"
+#include "AssetManager.hpp"
 
 namespace Mint {
     class Engine {
@@ -24,6 +25,7 @@ namespace Mint {
         void Shutdown();
         void Run();
         Renderer MTRenderer;
+        AssetManager MTAssetManager;
         Console MTConsole;
         Application* MTApplication;
         int Hash(int a, int b);

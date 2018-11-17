@@ -7,24 +7,26 @@
 //
 
 #include "File.hpp"
+#include "Console.hpp"
 #include <fstream>
+#include <dirent.h>
 
 namespace Mint {
-    File::File(const string& s) : _path(s) {}
+    File::File(const string& s) : Path(s) {}
     File::~File() {}
     
-//   void File::GetFilesForDirectory(const string& d, const  vector<File>& files) {
-//       DIR* dirp = opendir(name.c_str());
-//       struct dirent * dp;
-//       while ((dp = readdir(dirp)) != NULL) {
-//           files.push_back(dp->);
-//       }
-//       closedir(dirp);
-//    }
+   void File::GetFilesForDirectory(const string& d, vector<File>& files) {
+       DIR* dirp = opendir(d.c_str());
+       struct dirent * entry;
+       while ((entry = readdir(dirp)) != NULL) {
+           if( strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0 )
+               files.push_back(File(d+"/"+entry->d_name));
+       }
+       closedir(dirp);
+    }
     
-    vector<string> File::Read() {
-        vector<string> lines;
-        ifstream in(_path);
+    void File::Read(vector<string>& lines) {
+        ifstream in(Path);
         string line;
         if (in.is_open()) {
             while ( getline (in,line) ) {
@@ -32,10 +34,9 @@ namespace Mint {
             }
             in.close();
         }
-        return lines;
     }
     void File::WriteLine(const string& s) {
-        ofstream out(_path);
+        ofstream out(Path);
         if (out.is_open())
             out << s << "\n";
     }
